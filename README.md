@@ -22,7 +22,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [Add live site URL here](https://anne-mfl.github.io/audiophile-ecommerce-website/)
+- [Live site here](https://anne-mfl.github.io/audiophile-ecommerce-website/)
 
 ## Built with
 
