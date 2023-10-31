@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
+
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  .text-navlink {
+    @apply text-white text-13 font-bold tracking-2 hover:text-primary 
+  }
+  .text-newproduct {
+    @apply text-sm tracking-10
+  }
+  .text-title-56 {
+    @apply text-white text-56 font-bold tracking-2 leading-14.5 max-sm:text-4xl
+  }
+  .text-title-40 {
+    @apply text-40 tracking-1.5 font-bold
+  }
+  .text-title-32 {
+    @apply text-32 font-bold tracking-1 leading-9
+  }
+  .text-title-24 {
+    @apply text-2xl font-bold tracking-1.7
+  }
+  .text-title-18 {
+    @apply text-lg font-bold tracking-1.3
+  }
+  .text-description {
+    @apply text-15 leading-6.25
+  }
+  .text-title-13 {
+    @apply text-13 text-primary font-bold leading-6.25
+  }
+  .text-input-label {
+    @apply text-xs font-bold tracking-m0.2
+  }
+  .text-error-message {
+    @apply text-xs text-red-600 tracking-m0.2
+  }
+  .button1 {
+    @apply bg-primary text-white text-13 font-bold tracking-1 py-4 px-8 hover:bg-primaryLight
+  }
+  .button2 {
+    @apply text-13 font-bold tracking-1 border-1 border-black py-4 px-8 hover:bg-black hover:text-white
+  }
+  .button3 {
+    @apply text-13 font-bold tracking-1 opacity-50 hover:text-primary hover:opacity-100
+  }
+  .button-goback {
+    @apply text-15 leading-6.25 opacity-50  hover:text-primary hover:opacity-100
+  }
+  .input-form {
+    @apply border-[#CFCFCF] border-1 rounded-lg py-4 px-6 text-sm font-bold tracking-m0.2 focus:outline-primary
+  }
+  
 }
