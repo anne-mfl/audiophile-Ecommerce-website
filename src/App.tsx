@@ -35,17 +35,12 @@ function App() {
       <div className={`font-manrope ${openModal !== 'none' && 'prevent-scroll'}`}>
         <Nav />
         <Routes>
-          {/* <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/:category' element={<CategoryPage />} />
           <Route path='/:category/:slug' element={<ProductDetailPage />} />
           <Route path='/checkout' element={<Checkout />} />
-          <Route path='/404' element={<PageNotFound />} /> */}
-          {/* <Route path='*' element={<PageNotFound />} /> */}
-          <Route path='audiophile-ecommerce-website/' element={<Home />} />
-          <Route path='audiophile-ecommerce-website/:category' element={<CategoryPage />} />
-          <Route path='audiophile-ecommerce-website/:category/:slug' element={<ProductDetailPage />} />
-          <Route path='audiophile-ecommerce-website/checkout' element={<Checkout />} />
-          <Route path='audiophile-ecommerce-website/404' element={<PageNotFound />} />
+          <Route path='/404' element={<PageNotFound />} />
+          <Route path='*' element={<PageNotFound />} />
         </Routes>
         <Footer />
       </div>
