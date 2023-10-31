@@ -25,9 +25,9 @@ function App() {
 
   let cart = useSelector((state: RootState) => state.cart)
 
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cart))
-  }, [cart])
+  // useEffect(() => {
+  //   localStorage.setItem('cart', JSON.stringify(cart))
+  // }, [cart])
 
 
   return (
