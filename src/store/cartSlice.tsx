@@ -11,13 +11,13 @@ const initialCartState: {
   totalPrice: 0
 }
 
-let localStorageCart = JSON.parse(localStorage.getItem('cart') || '{}')
-// console.log(localStorageCart)
+let localStorageCart = JSON.parse(localStorage.getItem('cart') || '{"items": [], "totalQuantity": 0, "totalPrice": 0}')
+console.log(localStorageCart)
 
 const cartSlice = createSlice({
   name: 'cart',
-  // initialState: !localStorageCart ? initialCartState : localStorageCart,
-  initialState: initialCartState,
+  initialState: !localStorageCart ? initialCartState : localStorageCart,
+  // initialState: initialCartState,
   reducers: {
     addItemToCart: (state, action) => {
       const existingItem = state.items.find((item: CartItemType) => item.id === action.payload.id)
