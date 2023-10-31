@@ -40,7 +40,7 @@ function App() {
           <Route path='/:category/:slug' element={<ProductDetailPage />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/404' element={<PageNotFound />} />
-          <Route path='*' element={<PageNotFound />} />
+          {/* <Route path='*' element={<PageNotFound />} /> */}
         </Routes>
         <Footer />
       </div>
